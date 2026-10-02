@@ -1,0 +1,11 @@
+torch
+diffusers
+transformers
+accelerate
+safetensors
+requests
+Pillow
+numpy
+imageio
+imageio-ffmpeg
+pyinstaller
