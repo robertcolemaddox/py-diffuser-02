@@ -4,6 +4,10 @@
 
 It uses a simple Tkinter interface and can optionally use a locally running Ollama model to expand short prompts into more descriptive photorealistic prompts.
 
+<p align="center">
+  <img src="examples/norway.png" alt="Photorealistic landscape generated with Py Diffuser 02" width="100%">
+</p>
+
 ## Features
 
 - Photorealistic Stable Diffusion generation
@@ -30,6 +34,8 @@ py_diffuser_02/
 │   ├── model_manager.py
 │   ├── ollama_client.py
 │   └── ui.py
+├── examples/
+│   └── norway.png
 ├── output/
 ├── installer/
 │   ├── build_installer.ps1
@@ -147,3 +153,26 @@ The application always:
 1. Sends the prompt through the photorealistic Ollama instruction when Ollama is enabled.
 2. Uses the photorealistic negative prompt during Stable Diffusion generation.
 3. Names outputs using the `photo` suffix.
+
+## Experimentation
+
+Py Diffuser 02 is intended to be experimented with and modified.
+
+The source code exposes generation parameters such as:
+
+- Inference steps
+- Guidance scale
+- Image resolution
+- Upscaling
+- Image-to-image strength
+- Video frame count
+- Video frame rate
+- Prompt enhancement settings
+
+Experimenting with these values can produce substantially different results and is one of the reasons the source code is included alongside the Windows executable build process.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+The MIT License applies to the Py Diffuser 02 source code itself. Stable Diffusion 1.5, Diffusers, PyTorch, Ollama, and other third-party components remain subject to their respective licenses and terms.
